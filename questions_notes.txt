@@ -1,0 +1,38 @@
+1. SOLVED. How do I do flask run when my application
+    is named something other than application.py?
+    I tried renaming it to pow_app.py, but the "run flask"
+    command wouldn't work (internal server error)
+
+2. SOLVED. How do I import data into phpliteadmin? How do I update phpliteadmin in cloud9?
+
+3. SOLVED. Why is weather API not working? Won't display any information in weather_result -->
+    but also won't render weather_result because it is claiming that city text input is
+    invalid (returning 400 error). Is my lookup function incorrect? Is it incorrectly parsing
+    the API call URL?
+         (how to get API to work, how to incorporate weather forecast into search results when I have a different table? Or should I just display it when results of query display?)
+
+4. SOLVED. How do I get Search Destination query results to display in a dynamic HTML page?
+    I need the page to display all rows returned from the SQL query.
+
+5. SOVED. Do I need to hardcode my API_KEY so that this can be graded without creating an opeanweathermap.org account?
+
+6. SOLVED. How do I make my insert code (for querying weather forecast) less computationally taxing. It takes several minutes to call the api for every single row.
+    E.g. only do look up on the values returned from the search?
+
+TODO:
+    1) DONE. Make resort search a drop-down menu
+    2) DONE. Include weather forecast in search results by using nearest city from data to call API
+    3) ICEBOX. Include in the search results table an external link to purchase tickets, button save to wishlist SQL table
+    4) DONE. Update weather API to be in farenheit, not metric
+    5) DONE. Make all weather "descriptive" using "description" section: http://api.openweathermap.org/data/2.5/forecast?q=wichita&appid=62fd0f6f4d938652ab8198ca09401db2
+    6) DONE. Customize CSS
+    7) DONE. Add "about" page
+    8) ICEBOX. Add wishlist function
+    9) DONE. If no results returned, render template that says "sorry, no resorts match your search. click here to try again"
+    10) DONE. If any field left blank in search, return error message (require that all fields be submitted)
+    11) ICEBOX. Add custom bootswatch CSS to styles instead of linking to bootswatch?
+    12) DONE. About button doesn't work
+    13) DONE. Add layout to apologies
+    14) ICEBOX. Render a "welcome" template when user registers?
+    15) DONE. Fix register and login button locations
+    16) DONE. Add "already registered" or "need to register" links.

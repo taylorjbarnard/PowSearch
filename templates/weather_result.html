@@ -1,0 +1,16 @@
+{% extends "pow_layout.html" %}
+
+{% block title %}
+   Weather Result
+{% endblock %}
+
+{% block main %}
+
+    <div style="background-color:#2fbda3; margin-top:40px; margin-bottom:40px;">
+         <p>
+            The temperature in {{city.name}} is {{city.temperature}} degrees fahrenheit.
+        </p>
+    </div>
+
+
+{% endblock %}

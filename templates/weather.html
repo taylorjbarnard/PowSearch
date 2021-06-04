@@ -1,0 +1,14 @@
+{% extends "pow_layout.html" %}
+
+{% block title %}
+   Weather
+{% endblock %}
+
+{% block main %}
+    <form action="/weather" method="POST">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="city" placeholder="City" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Display Weather</button>
+    </form>
+{% endblock %}

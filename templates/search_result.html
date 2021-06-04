@@ -1,0 +1,54 @@
+{% extends "pow_layout.html" %}
+
+{% block title %}
+   Search Result
+{% endblock %}
+
+{% block main %}
+    <pr>
+      Get stoked. Winter fun is coming your way.
+    </pr>
+    <br>
+    <br>
+    <br>
+    <table style="float:left; margin-left:300px;">
+        <thead>
+            <tr class="table-primary">
+                <th scope="row" style="padding:10px">Recommended Ski Resorts</th>
+            </tr>
+            <tbody>
+                <div class="row">
+                    <div class="column">
+                    <!--Display as table data all resort name results returned from query -->
+                        {% for row in resorts %}
+                        <tr>
+                            <td>{{row.resort_name}}</td>
+                        </tr>
+                        {% endfor %}
+                    </div>
+                </div>
+            </tbody>
+        </thead>
+    </table>
+
+    <table style="float:right; margin-right:300px;">
+        <thead>
+            <tr class="table-primary">
+                <th scope="row" style="padding:10px">5-Day Weather Forecast</th>
+            </tr>
+            <tbody>
+                <div class="row">
+                    <div class="column">
+                    <!-- Display as table data all resort weather results returned from query -->
+                        {% for row in resorts %}
+                        <tr>
+                            <td>{{row.weather}}</td>
+                        </tr>
+                       {% endfor %}
+                    </div>
+                </div>
+            </tbody>
+        </thead>
+    </table>
+
+{% endblock %}

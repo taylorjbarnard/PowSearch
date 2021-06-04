@@ -1,0 +1,77 @@
+{% extends "pow_layout.html" %}
+
+{% block title %}
+   Search Destinations
+{% endblock %}
+
+{% block main %}
+
+    <form action="/search" method="POST">
+
+        <div class="form-group">
+            <select autocomplete="off" autofocus class="form-control" name="state_province" placeholder="State/province" required>
+                <option value="">State/Province</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Alberta</option>
+                <option>Arizona</option>
+                <option>British Columbia</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New York</option>
+                <option>Newfoundland and Labrador</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Nova Scotia</option>
+                <option>Ohio</option>
+                <option>Ontario</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Quebec</option>
+                <option>Rhode Island</option>
+                <option>Tennessee</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+                <option>Yukon</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="peak_elevation" placeholder="Minimum Elevation" type="number" min="0" required>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="skiable_acres" placeholder="Minimum Acres" type="number" min="0" required>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="total_trails" placeholder="Minimum Trails" type="number" min="0" required>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="total_lifts" placeholder="Minimum Lifts" type="number" min="0">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="avg_snowfall" placeholder="Minimum Snowfall" type="number" min="0" required>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="ticket_price" placeholder="Max Ticket Price" type="number" min="0" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}
